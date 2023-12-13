@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> 
+    
+    <!--AOS Cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    
+    .card{ 
+        backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(197, 181, 181, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+body{
+    background-image: url("./images/gradient-dark-blue-vector-futuristic-digital-background_53876-110563.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+     /* backdrop-filter: blur(2px) saturate(150%);
+    -webkit-backdrop-filter: blur(2px) saturate(140%);  */
+}
+ .carding{
+    display: flex;
+    justify-content: center;
+       
+} 
+h1{
+    text-align: center;
+    font-family: monospace;
+}
+.form-control{
+    border-radius: 50px;
+    box-shadow: inset;
+}
+.form-label{
+    font-size: 20   px;
+    font-style: oblique;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+  </style>
+</head>
+<body>
+    <div class="container-fluid" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="row">
+            
+            <div class="col-lg-6 pt-5">
+                <h1 class="text-info">HTML FORMS</h1>
+                <div class="carding">
+                <div class="card justify-content-center align-items-center pt-5 pb-5" style="width: 25rem;">
+                    <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                     <div class="mb-3">
+                      <label class="form-label">User Name</label> 
+                      <div class="col-sm">
+                      <input type="text" class="form-control" placeholder="Enter your name">
+                      </div>
+                       </div> 
+                       </div>
+
+                    <div class="col">
+                        
+                       <div class="mb-3">
+                        <label class="form-label">Password</label> 
+                        <div class="col-sm">
+                        <input type="password" class="form-control" placeholder="Enter your Password">
+                        </div>
+                         </div> 
+                    </div>
+
+</div>
+
+<div class="row">
+<div class="col">
+                    <div class="mb-3">
+                        <label  class="form-label">Phone number</label>
+                        <div class="col-sm">
+                        <input type="number" class="form-control" placeholder="Enter quantity">
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col">
+                      <div class="mb-3">
+                        <label  class="form-label">D.O>b</label>
+                        <div class="col-sm">
+                        <input type="date" class="form-control" placeholder="Enter Distance in KM">
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                      <div class="mb-3">
+                        <label  class="form-label">Enter your email</label>
+                        <div class="col-sm">
+                    <input type="email" class="form-control"name="sum" placeholder="Enter email">
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label  class="form-label">Resume</label>
+                        <div class="col-sm">
+                    <input type="file" class="form-control"name="sum" placeholder="Enter email">
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Hobbies</label>
+                        <div class="col-sm">
+                    <input type="checkbox">Cycling
+                    <input type="checkbox">Photography
+                    <input type="checkbox">Reading
+                    <input type="checkbox">Drawing
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Gender</label>
+                        <div class="col-sm">
+                   <input type="radio"  value="Male" name="gender"> Male
+                    <input type="radio"  value="Female" name="gender">Female
+                    <input type="radio"  value="Transgender" name="gender">Transgender
+                   
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Price range</label>
+                        <div class="col-sm">
+                   <input type="range">
+                   
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Choose the color</label>
+                        <div class="col-sm">
+                   <input type="color">
+                    </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label  class="form-label">Website URL</label>
+                        <div class="col-sm">
+                   <input type="url">
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label  class="form-label">Permanent address *</label>
+                        <div class="col-sm">
+                   <textarea rows="5" cols="20"></textarea>
+                   
+                    </div>
+                    </div>
+
+                     <div class="d-grid gap-2 col-4 mx-auto">
+                        <button type="submit" class="btn btn-outline-dark d-flex">Submit</button>
+                        <button type="reset" class="btn btn-outline-dark d-flex">Reset</button>
+                        <button type="submit" class="btn btn-outline-dark d-flex">Submit</button>
+                        
+</div>
+                        
+
+
+
+
+
+<!-- 
+                      <div class="d-grid gap-2 col-4 mx-auto">
+                    <button type="submit" class="btn btn-outline-dark d-flex" onclick="calcSum()">Submit</button>
+                    
+                    
+                    <script>
+                        function calcSum() {
+                            let veg = document.getElementsByName("veg")[100].value;
+                            let nonveg = document.getElementsByName("nonveg")[200].value;
+                            let sum = Number(veg) + Number(nonveg);
+                            document.getElementsByName("sum")[0].value = sum;
+                        }
+                    </script> -->
+                  </form>
+                  </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html> 
