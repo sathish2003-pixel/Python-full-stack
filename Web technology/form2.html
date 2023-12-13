@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,9 +22,9 @@
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 body{
-    background-image: url("./images/gradient-dark-blue-vector-futuristic-digital-background_53876-110563.avif");
+    /* background-image: url("./images/gradient-dark-blue-vector-futuristic-digital-background_53876-110563.avif");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
      /* backdrop-filter: blur(2px) saturate(150%);
     -webkit-backdrop-filter: blur(2px) saturate(140%);  */
 }
@@ -46,6 +46,9 @@ h1{
     font-style: oblique;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+.container-fluid{
+        margin-left: 500px;
+}
   </style>
 </head>
 <body>
@@ -54,9 +57,9 @@ h1{
             
             <div class="col-lg-6 pt-5">
                 <h1 class="text-info">HTML FORMS</h1>
-                <div class="carding">
+                <!-- <div class="carding">
                 <div class="card justify-content-center align-items-center pt-5 pb-5" style="width: 25rem;">
-                    <div class="card-body">
+                    <div class="card-body"> -->
                 <form>
                     <div class="row">
                         <div class="col">
@@ -77,63 +80,105 @@ h1{
                         </div>
                          </div> 
                     </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label  class="form-label">Phone number</label>
+                            <div class="col-sm">
+                            <input type="number" class="form-control" placeholder="Enter quantity">
+                            </div>
+                          </div>
+                    </div>
 
 </div>
 
 <div class="row">
 <div class="col">
-                    <div class="mb-3">
-                        <label  class="form-label">Phone number</label>
-                        <div class="col-sm">
-                        <input type="number" class="form-control" placeholder="Enter quantity">
-                        </div>
-                      </div>
+    <div class="mb-3">
+        <label  class="form-label">D.O.B</label>
+        <div class="col-sm">
+        <input type="date" class="form-control" placeholder="Enter Distance in KM">
+        </div>
+      </div>
+                    
                       </div>
                       <div class="col">
-                      <div class="mb-3">
-                        <label  class="form-label">D.O>b</label>
-                        <div class="col-sm">
-                        <input type="date" class="form-control" placeholder="Enter Distance in KM">
+                        <div class="mb-3">
+                            <label  class="form-label">Enter your email</label>
+                            <div class="col-sm">
+                        <input type="email" class="form-control"name="sum" placeholder="Enter email">
+                        </div>
                         </div>
                       </div>
-                      </div>
+                      <div class="col">
+                        <div class="mb-3">
+                            <label  class="form-label">Resume</label>
+                            
+                        <input type="file" class="form-control"name="sum" placeholder="Enter email">
+                        
+                        </div>
                     </div>
-                      <div class="mb-3">
-                        <label  class="form-label">Enter your email</label>
-                        <div class="col-sm">
-                    <input type="email" class="form-control"name="sum" placeholder="Enter email">
                     </div>
-                    </div>
+                    <div class="row>">
+                        <div class="col">
+                            
+                    
+                            <div class="mb-3">
+                                <label  class="form-label">Hobbies</label>
+                              
 
-                    <div class="mb-3">
-                        <label  class="form-label">Resume</label>
-                        <div class="col-sm">
-                    <input type="file" class="form-control"name="sum" placeholder="Enter email">
-                    </div>
-                    </div>
-                    <div class="mb-3">
-                        <label  class="form-label">Hobbies</label>
-                        <div class="col-sm">
-                    <input type="checkbox">Cycling
-                    <input type="checkbox">Photography
-                    <input type="checkbox">Reading
-                    <input type="checkbox">Drawing
-                    </div>
-                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Drawing
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Reading
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Photography
+                        </label>
+                      </div>
+
+</div>
+</div>
+
+                <div class="col">
                     <div class="mb-3">
                         <label  class="form-label">Gender</label>
                         <div class="col-sm">
-                   <input type="radio"  value="Male" name="gender"> Male
-                    <input type="radio"  value="Female" name="gender">Female
-                    <input type="radio"  value="Transgender" name="gender">Transgender
-                   
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         Male
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Female
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         Transgender
+                        </label>
+                      </div>
                     </div>
                     </div>
+                </div>
+                </div>
                     <div class="mb-3">
                         <label  class="form-label">Price range</label>
                         <div class="col-sm">
-                   <input type="range">
-                   
+                           
+                            <input type="range" class="form-range" id="customRange1">
                     </div>
                     </div>
                     <div class="mb-3">
@@ -158,35 +203,31 @@ h1{
                     </div>
                     </div>
 
-                     <div class="d-grid gap-2 col-4 mx-auto">
-                        <button type="submit" class="btn btn-outline-dark d-flex">Submit</button>
+                     <!-- <div class="d-grid gap-2 col-4 mx-auto"> -->
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-outline-dark d-flex">Submit</button>
+                            </div>
+                            <div class="col">
                         <button type="reset" class="btn btn-outline-dark d-flex">Reset</button>
+                        </div>
+                        <div class="col">
                         <button type="submit" class="btn btn-outline-dark d-flex">Submit</button>
+                        </div>
+                        </div>
                         
-</div>
+<!-- </div> -->
                         
 
 
 
 
 
-<!-- 
-                      <div class="d-grid gap-2 col-4 mx-auto">
-                    <button type="submit" class="btn btn-outline-dark d-flex" onclick="calcSum()">Submit</button>
-                    
-                    
-                    <script>
-                        function calcSum() {
-                            let veg = document.getElementsByName("veg")[100].value;
-                            let nonveg = document.getElementsByName("nonveg")[200].value;
-                            let sum = Number(veg) + Number(nonveg);
-                            document.getElementsByName("sum")[0].value = sum;
-                        }
-                    </script> -->
+           
                   </form>
-                  </div>
+                  <!-- </div>
             </div>
-        </div>
+        </div> -->
             </div>
         </div>
     </div>
@@ -195,4 +236,4 @@ h1{
   AOS.init();
 </script>
 </body>
-</html> 
+</html>  -->
