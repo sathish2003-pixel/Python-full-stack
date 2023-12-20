@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-decoration: solid;
+            font-style: bold;
+            background-color: blanchedalmond;
+            color: blueviolet;
+            font-size: 30px;
+        }
+        h1{
+            color:black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Zoo Kepper Application Form</h1><br>
+    <i>Please complete the form mandotary fields are marked with a*</i>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <form>
+            <table>
+            <tr>
+            <td>Name*</td><td><input type="text"><br></td>
+            </tr>
+            <tr>
+                <td>Telephone</td><td><input type="number"><br></td>
+                </tr>
+                <tr>
+                    <td>Email*</td><td><input type="email"><br></td>
+                    </tr>
+                    </table>
+                </form>
+    </fieldset>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form>
+            <table>
+            <tr>
+            <td>Age*</td><td><input type="text"><br></td>
+            </tr>
+            <tr>
+                <td>Gender</td><td>
+                    <select>
+                        <option>male</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>When did you first know you wanted to be a zoo-keeper?</td><td>
+                        <textarea style="width: 200px;height: 200px;"></textarea>
+                    </td>
+                    </tr>
+                    </table>
+                </form>
+    </fieldset>
+    <fieldset>
+        <legend>Pick your Favourite animal</legend>
+        <input type="checkbox">Lion
+        <input type="checkbox">Zebra
+        <input type="checkbox">Tiger
+        <input type="checkbox">Elephant
+        <input type="checkbox">Ananconda
+        <input type="checkbox">Pigeon
+    </fieldset><br>
+    <input type="submit" style="width: 100px; font-size: 20px; background-color: red;">
+</body>
+</html>
