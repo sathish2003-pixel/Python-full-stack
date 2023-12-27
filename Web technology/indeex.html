@@ -5,35 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-  *{
-  color: white;
-  font-size: 10px;
-  }
-body {
-  font-family: 'Arial', sans-serif;
-  background-image: url("./images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-  background-attachment: fixed;
-  }
+  .container {
+  width: 500px;
+  height: 250px;
+  margin: 50px;
+  outline: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 
-h1 {
-  color: #333;
+ 
 }
 
-p {
-  
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius:20%;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  filter: blur(0.1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid;
+}
+.mini{
+  width: 100px;
+  height: 100px;
+border-radius:20%;
+ border-color: 20px solid white;
+ background: transparent;
+ outline: solid 10px white;
+ display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+.inner{
+  width: 40px;
+  height: 40px;
+border-radius:50%;
+ border-color: 2px solid white;
+ background: transparent;
+ outline: solid 10px white;
+
+
+ 
+}
+.small-circle{
+  width: 40px;
+  height: 40px;
+border-radius:50%; 
+border-color: 2px solid white;
+display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
     </style>
 </head>
 <body>
-   <h1>Sathish</h1>
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum impedit qui aliquam, ad aperiam laboriosam ipsum repellat magni voluptates repudiandae cumque! Id, corrupti et fugiat omnis sapiente nisi quasi.
-Earum incidunt, delectus architecto veritatis nostrum adipisci est similique, consequatur officia repellat quis expedita sequi, dolorem quam facere! Enim ex totam voluptatibus eius numquam, quis omnis qui nam animi ipsum!
-Corporis, vel ab animi pariatur ipsa nam repellendus sapiente exercitationem neque maxime! Nemo repellat vero temporibus facilis. Molestias dolore, molestiae dolorem vitae a quidem ex! Architecto eum error atque dolore?
-Distinctio eius nobis dolor doloremque nemo? Illo optio, provident ipsam placeat maiores perferendis recusandae tenetur maxime sapiente repellat. Hic, dolorem officiis temporibus labore accusamus accusantium deserunt unde reiciendis magnam veniam!
-Btione unde voluptatem et, veniam consectetur minima suscipit.
-Harum quidem vero impedit. Obcaecati magni voluptatem nemo quisquam adipisci veritatis id dolorem autem exercitationem magnam. Est esse, laboriosam ipsum ipsam laborum ea expedita repellendus alias cumque dolore inventore beatae!
+  <div class="container">
+   
+    <div class="circle">
+    
+      <div class="mini">
+        
+        <div class="small-circle">
+         
+        <div class="inner">
+      
+          </div>
+        </div>
+      </div>
+    </div>
+<h3 style="margin-left: 20px;">Instagram</h3>
+</div>
 </body>
 </html>
