@@ -17,14 +17,17 @@
     .card{ 
         backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(0px) saturate(200%);
-    background-color: rgba(197, 181, 181, 0.4);
+    background-color: rgba(68, 68, 68, 0.812);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 body{
-    background-image: url("./images/bg.jpg");
+  background-image: url(./images/delicious-burger-with-many-ingredients-isolated-white-background-tasty-cheeseburger-splash-sauce.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:50%;
+    background-position: center;
+    margin-top: 100px;
+    padding-bottom: 200px;
      /* backdrop-filter: blur(2px) saturate(150%);
     -webkit-backdrop-filter: blur(2px) saturate(140%);  */
 }
@@ -35,14 +38,17 @@ body{
 h1{
     text-align: center;
     font-family: monospace;
+    text-decoration: solid;
 }
 .form-control{
     border-radius: 50px;
     box-shadow: inset;
+    width: 300px;
 }
 .form-label{
-    font-size: 20   px;
-    font-style: oblique;
+    font-size: 20px;
+    font-style:normal;
+    color: aliceblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
   </style>
@@ -52,14 +58,14 @@ h1{
         <div class="row">
             
             <div class="col-lg-12 pt-5">
-                <h1 class="text-info">Food corner</h1>
+                <h1 class="text-dark">Food corner</h1>
                 <div class="carding">
-                <div class="card justify-content-center align-items-center pt-5 pb-5" style="width: 25rem;">
+                <div class="card justify-content-center align-items-center pt-5 pb-5" style="width: 30rem;">
                     <div class="card-body">
                 <form>
                      <div class="mb-3">
                       <label class="form-label">Name</label> 
-                      <div class="col-sm">
+                      <div class="col-md">
                       <input type="text" class="form-control" placeholder="Enter your name">
                       </div>
                        </div> 
@@ -93,7 +99,7 @@ h1{
                     </div>
                     </div>
                       <div class="d-grid gap-2 col-4 mx-auto">
-                    <button type="submit" class="btn btn-outline-dark d-flex" onclick="calcSum()">Submit</button>
+                    <button type="submit" class="btn btn-outline-light d-flex " style="padding-left:20px ;" onclick="calcSum()">Submit</button>
                     
                     
                     <script>
