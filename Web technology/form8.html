@@ -12,27 +12,95 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      body{
+        background: hsla(135, 9%, 17%, 1);
+
+background: linear-gradient(135deg, hsla(135, 9%, 17%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(135, 9%, 17%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(135, 9%, 17%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#272F29", endColorstr="#000000", GradientType=1 );
+width: auto;
+height:1500px;
+      }
+      .card{
+        background-color: black;
+      }
+      .card-title{
+      font-weight: 800;
+      font-size:35px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .btn{
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 70px;
+      }
+     hr{
+      color:wheat;
+         }
+         .form-control{
+          background-color: transparent;
+         }
+         
+    </style>
 </head>
 <body>
+<nav class="navbar" style="background-color: black;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" href="#" style="font-size:30px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+      <img src="./images/spotify-logo-png-7056.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+      Spotify
+    </a>
+  </div>
+</nav>
     <div class="container text-light">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 pt-5">
-                <div class="card bg-dark" style="width: 35rem; height: 40rem;">
+                <div class="card" style="width: 35rem; height: 50rem;">
                    
                     <div class="card-body">
-                      <h3 class="card-title text-center text-light pt-5">Log in to Spotify</h3>
-                      <a href="#" class="btn btn-primary">Go somewhere</a><br>
-                      <a href="#" class="btn btn-primary">Go somewhere</a><br>
-                      <a href="#" class="btn btn-primary">Go somewhere</a><br>
-                      <a href="#" class="btn btn-primary">Go somewhere</a><br>
-                      <div class="mb-3 col-sm">
+                      <h3 class="card-title text-center text-light pt-3 pb-4">Log in to Spotify</h3>
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <a href="#" class="btn"><i class="fa-brands fa-google" style="color: #60f50f;" class="icon"></i>    Continue with Google</a>
+                        <a href="#" class="btn"><i class="fa-brands fa-facebook" style="color: #005eff;"></i>   Continue with Facebook</a>
+                        <a href="#" class="btn"><i class="fa-brands fa-apple" style="color: #ffffff;"></i>    Continue with Apple</a>
+                        <a href="#" class="btn">Continue with Phone number</a>
+                    <hr>
+                   
+                      <div class="mb-3 text-light pt-1">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email or username">
                       </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <div class="mb-3 text-light">
+                        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
                       </div>
+                      <div class="mb-3 text-light">
+                        <label for="exampleFormControlTextarea1" class="form-label">Remember me</label>
+                        
+                      </div>
+                    
+                  
+                        <a href="#" class="btn"  style="background-color: #1ed760; border: 0px;color:black;text-decoration: solid;">Log In</a>
+                        
+                        <a href="#" class="text-center text-light pt-3">Forgot your password</a><hr>
+                        </div>
+                        <div class="mb-4 text-light text-center d-grid col-12">
+                        Don't have an account?<a href="#" class="text-light">Sign up for Spotify</a>
+                        </div>
+                      
+                     
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                          
+                        </div>
+                        
+                     
+                    </div>
                     </div>
                   </div>
             </div>
