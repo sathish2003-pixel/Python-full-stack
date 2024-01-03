@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body
+        {
+           background-color: aqua;
+        
+        }
+        .left
+        {
+            position: absolute;
+            left: 400px;
+            top: 200px;
+            width: 200px;
+            height: 350px;
+            border: 2px solid black;
+            border-right: none;
+            border-radius: 15px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+            background-color: blue;
+            color: white;
+        }
+        .left>h3{
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+        .left>p{
+            text-align: center;
+        }
+        #button1
+        {
+            margin-top: 40px;
+            margin-left: 55px;
+            border-radius: 10px;
+            width: 90px;
+        }
+
+        .center
+        {
+            position: absolute;
+            left: 600px;
+            top: 200px;
+            width: 200px;
+            height: 370px;
+            border: 2px solid black;
+            border-radius: 15px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+            background-color: green;
+            color: white;
+        }
+        .center>h3{
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+        .center>p{
+            text-align: center;
+        }
+        #button2
+        {
+            margin-top: 40px;
+            margin-left: 55px;
+            border-radius: 10px;
+            width: 90px;
+        }
+
+        .right
+        {
+            position: absolute;
+            left: 804px;
+            top: 200px;
+            width: 200px;
+            height: 350px;
+            border: 2px solid black;
+            border-left: none;
+            border-radius: 15px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+            background-color:  red;
+            color: white;
+        }
+        .right>h3{
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+        .right>p{
+            text-align: center;
+        }
+        #button3
+        {
+            margin-top: 40px;
+            margin-left: 55px;
+            border-radius: 10px;
+            width: 90px;
+        }
+        .top1
+        {
+            position: absolute;
+            left: 400px;
+            top: 100px;
+            border: 2px solid black;
+            width: 200px;
+            border-bottom: none;
+            text-align: center;
+            border-right: none;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            background-color: white;
+        }
+        .top2
+        {
+            position: absolute;
+            left: 600px;
+            top: 60px;
+            border: 2px solid black;
+            width: 200px;
+            height: 140px;
+            border-bottom: none;
+            text-align: center;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            box-shadow: 0px 0px  black;
+            background-color: white;
+        }
+        .top3
+        {
+            position: absolute;
+            left: 804px;
+            top: 100px;
+            border: 2px solid black;
+            width: 199px;
+            border-bottom: none;
+            text-align: center;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            box-shadow: 0px 0px black;
+            border-left: none;
+            background-color: white;
+        }
+        h1
+        {
+            
+            text-align: center;
+        }
+        .container
+        {
+            position: absolute;
+            left: 80px;
+            top: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+<h1>Creating Pricing Table</h1>
+<div id="full-box">
+    <div class="container">
+        <div class="left">
+            <h3>BASIC</h3>
+            <p>Login on 1 device</p>
+            <p>720p content</p>
+            <p>Video live stream </p>
+            <p>Free downloads</p>
+            <input type="button" name="" id="button1" value="choose">
+        </div>
+        <div class="center">
+            <h3>Gold</h3>
+            <p>Login on 2 device</p>
+            <p>1080p content</p>
+            <p> Video live stream</p>
+            <p>Free downloads</p>
+            <input type="button" name="" id="button2" value="choose">
+        </div>
+        <div class="right">
+            <h3>Premium</h3>
+            <p>Login on 3 device</p>
+            <p>4k content</p>
+            <p>Video live stream</p>
+            <p>Free downloads</p>
+            <input type="button" name="" id="button3" value="choose">
+        </div>
+        <div class="top1">
+            <h2>$ 26</h2>
+            <p>per month</p>
+        </div>
+        <div class="top2">
+            <h2>$ 40</h2>
+            <p>per month</p>
+        </div>
+        <div class="top3">
+            <h2>$ 50</h2>
+            <p>per month</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
