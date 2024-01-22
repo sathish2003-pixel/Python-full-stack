@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> 
     <link rel="icon" type="image/x-icon" href="./Web technology/images/swiggy favicon.avif">
-    
+    <style>
+        .row{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top:100px;
+           
+        }
+    </style>
     <script>
         function add(){
             var num1= parseInt(document.getElementById("num1").value);
@@ -39,12 +47,37 @@
         }
     </script>
 </head>
-<body>
-    <input type="number" id="num1">
-    <input type="number" id="num2">
-    <button class="btn btn-dark" onclick="add()">ADD</button>
-    <button class="btn btn-dark" onclick="sub()">SUB</button>
-    <button class="btn btn-dark" onclick="mul()">MUL</button>
-    <button class="btn btn-dark" onclick="div()">DIV</button>
+<body class="bg-dark">
+    <form class="text-light">
+        <h1 class="text-center pt-4 text-info">Arithmetic calculator</h1>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Enter the Number 1:</label>
+          <div class="col-sm-2">
+            <input type="number" class="form-control" id="num1">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Enter the Number 2:</label>
+          <div class="col-sm-2">
+            <input type="number" class="form-control" id="num2">
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          
+          <div class="col-sm-2">
+    
+            <button class="btn btn-info" onclick="add()">ADD</button>
+            <button class="btn btn-info" onclick="sub()">SUB</button>
+            <button class="btn btn-info" onclick="mul()">MUL</button>
+            <button class="btn btn-info" onclick="div()">DIV</button>
+      </form>
+    
+  
 </body>
 </html>
+
+
+
+
+
+
