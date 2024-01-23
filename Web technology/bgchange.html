@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> 
+
+<style>
+    #actor{
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./images/2086266.jpg);
+    
+    }
+</style>
+<script>
+    function sur(){
+        document.getElementById("actor").style.backgroundImage="url('./images/surya.jpeg')"
+    }
+    function vj(){
+        document.getElementById("actor").style.backgroundImage="url('./images/vikram.jpeg')"
+    }
+    function dh(){
+        document.getElementById("actor").style.backgroundImage="url('./images/kamal.jpeg')"
+    }
+</script>
+</head>
+<body>
+    <div id="actor" class="text-center">
+       
+    </div>
+    <button class="btn btn-dark" id="btn1" onclick="sur()">Button1</button>
+    <button class="btn btn-dark" id="btn2" onclick="vj()">Button2</button>
+    <button class="btn btn-dark" id="btn2" onclick="dh()">Button3</button>
+</body>
+</html>

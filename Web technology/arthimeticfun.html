@@ -19,32 +19,29 @@
     </style>
     <script>
         function add(){
-            var num1= parseInt(document.getElementById("num1").value);
-            var num2= parseInt(document.getElementById("num2").value);
-            var num3=(num1 + num2);
-            alert(num3);
+            let num1= parseInt(document.getElementById("num1").value);
+            let num2= parseInt(document.getElementById("num2").value);
+            let num3=(num1 + num2);
+          document.getElementById("out").innerHTML=num3;
         }
-        function sub(){
-            var num1= parseInt(document.getElementById("num1").value);
-            var num2= parseInt(document.getElementById("num2").value);
-            var num3=(num1 - num2);
-            alert(num3);
-
-        }
-        function mul(){
-            var num1= parseInt(document.getElementById("num1").value);
-            var num2= parseInt(document.getElementById("num2").value);
-            var num3=(num1 * num2);
-            alert(num3);
-
-        }
-        function div(){
-            var num1= parseInt(document.getElementById("num1").value);
-            var num2= parseInt(document.getElementById("num2").value);
-            var num3=(num1 / num2);
-            alert(num3);
-
-        }
+        // function sub(){
+        //     var num1= document.getElementById("num1").value;
+        //     var num2= document.getElementById("num2").value;
+        //     var sub=(num1 - num2);
+        //     document.getElementById("out").innerHTML=sub;
+        // }
+        // function mul(){
+        //     var num1= parseInt(document.getElementById("num1").value);
+        //     var num2= parseInt(document.getElementById("num2").value);
+        //     var mul=(num1 * num2);
+        //     document.getElementById("out").innerHTML=mul;
+        // }
+        // function div(){
+        //     var num1= parseInt(document.getElementById("num1").value);
+        //     var num2= parseInt(document.getElementById("num2").value);
+        //     var div=(num1 / num2);
+        //     document.getElementById("out").innerHTML=div;
+        // }
     </script>
 </head>
 <body class="bg-dark">
@@ -62,14 +59,24 @@
             <input type="number" class="form-control" id="num2">
           </div>
         </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Answer:</label>
+          <div class="col-sm-2">
+            <h1 id="out" style="color: aliceblue;"></h1>
+           
+          </div>
+        </div>
         <fieldset class="row mb-3">
           
           <div class="col-sm-2">
     
             <button class="btn btn-info" onclick="add()">ADD</button>
-            <button class="btn btn-info" onclick="sub()">SUB</button>
-            <button class="btn btn-info" onclick="mul()">MUL</button>
-            <button class="btn btn-info" onclick="div()">DIV</button>
+            <!-- <button class="btn btn-info" onclick="add()">ADD</button>
+            <button class="btn btn-info" onclick="add()">ADD</button>
+            <button class="btn btn-info" onclick="add()">ADD</button> -->
+
+
+          
       </form>
     
   
